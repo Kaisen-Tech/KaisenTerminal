@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="[http://schemas.android.com/apk/res/android](http://schemas.android.com/apk/res/android)"
+    xmlns:tools="[http://schemas.android.com/tools](http://schemas.android.com/tools)"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#1C1C1C"
+    tools:context=".MainActivity">
+
+    <!-- Terminal output display -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:background="#000000">
+
+        <TextView
+            android:id="@+id/terminal_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:padding="4dp"
+            android:textIsSelectable="true"/>
+
+    </ScrollView>
+
+    <!-- Terminal input field -->
+    <EditText
+        android:id="@+id/terminal_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type command here..."
+        android:textColorHint="#AAAAAA"
+        android:textColor="#FFFFFF"
+        android:fontFamily="monospace"
+        android:textSize="14sp"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:background="@android:color/transparent"
+        android:padding="8dp" />
+
+</LinearLayout>
